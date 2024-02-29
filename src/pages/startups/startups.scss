@@ -1,0 +1,105 @@
+.about {
+  &-header {
+    margin-top: 25px;
+    gap: 40px;
+
+    &-text {
+      text-align: center;
+      max-width: 1000px;
+      gap: 20px;
+      font-weight: 100;
+      font-size: 15px;
+      margin: 0 15px;
+    }
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+.startups-section {
+  .startups-header {
+    width: 100vw;
+    height: 558px;
+    display: flex;
+    flex-direction: column;
+
+    .startups-banner {
+      display: flex;
+      align-items: center;
+      height: 198px;
+      background-color: greenyellow;
+      background-image: url(./../../assets/img/startupsBanner.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center bottom;
+
+      h1 {
+        margin: 0;
+        padding: 66px 0px 66px 133px;
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: white;
+      }
+    }
+
+    .startups-underbanner {
+      display: flex;
+      flex-grow: 1;
+      padding: 72px 123px;
+      justify-content: space-between;
+
+      span {
+
+        font-size: 1.2rem;
+      }
+
+
+      &-animated1 {
+        height: 232px;
+        width: 324px;
+        flex-direction: column;
+      }
+
+      &-animated2 {
+        height: 232px;
+        width: 324px;
+        flex-direction: column;
+      }
+
+      &-animated3 {
+        height: 232px;
+        width: 324px;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .featured-every {
+    height: auto;
+    display: flex;
+    padding: 60px 123px;
+    justify-content: center;
+
+    &-container {
+
+      h1 {
+        margin-bottom: 40px;
+      }
+
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-grid {
+      margin-bottom: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 36px 0px;
+    }
+
+  }
+}

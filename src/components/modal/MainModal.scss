@@ -1,0 +1,216 @@
+.mainModal {
+  &-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    max-height: 100vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    
+
+
+    h1 {
+      margin: 0px;
+    }
+  }
+
+  &-closeButton {
+    margin-top: 40px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: end;
+    // position: absolute;
+    // top: 33px;
+    // right: 20px;
+    cursor: pointer;
+  }
+
+  &-section-header {
+    display: flex;
+    align-items: start;
+    margin-left: 64px;
+
+    img {
+      margin-right: 16px;
+    }
+
+
+    &-title {
+      align-items: center;
+      margin-bottom: 16px;
+
+      h1 {
+        color: #55B03B;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &-section-left {
+    width: 60%;
+    height: 100%;
+    margin-left: 64px;
+
+
+
+    span {
+      font-size: 1rem;
+      font-family: RobotoLight;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+    &-bottom {
+      h1 {
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: Roboto;
+      }
+    }
+
+    &-card {
+      min-height: 160px;
+      width: 243px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      margin-bottom: 56px;
+      box-shadow: 0px 8px 39px 12px rgba(0, 0, 0, 0.1);
+
+      span {
+        color: #55B03B;
+        font-size: 0.75rem;
+      }
+
+      p {
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 0.75rem;
+      }
+
+      div {
+        width: 200px;
+      }
+    }
+
+  }
+
+  &-section-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 100px;
+
+    div {
+      h1 {
+        margin-bottom: 10px;
+        font-size: 1rem;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFF;
+        border-radius: 6px;
+        height: 50px;
+        width: 209px;
+        box-shadow: 0px 11px 89px 16px rgba(0, 0, 0, 0.1);
+        margin-bottom: 43px;
+
+        span {
+          color: #55B03B;
+          font-size: 18px;
+          font-family: Roboto;
+          font-weight: 400;
+        }
+      }
+    }
+
+    button {
+      border: 1px solid black;
+      border-radius: 8px;
+      width: 209px;
+      height: 40px;
+    }
+  }
+
+
+
+
+
+}
+
+.ReactModal__Overlay {
+  background-color: var(--black-opacity) !important;
+  transition: ease 0.3s all;
+  opacity: 0;
+  z-index: 500;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  outline: none;
+  margin-top: 90vh;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+  margin-top: 90vh;
+}
+
+@media only screen and (min-width: 800px) {
+  .mainModal {
+    &-content {
+      padding: 20px 60px;
+    }
+  }
+
+  .ReactModal__Content {
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+    max-width: 0;
+    max-height: 0;
+    margin-top: 0;
+    outline: none;
+  }
+
+  .ReactModal__Content--after-open {
+    opacity: 1;
+    max-width: 70vw;
+    max-height: 90vh;
+    margin-top: 0;
+  }
+
+  .ReactModal__Content--before-close {
+    opacity: 0;
+    max-width: 0;
+    max-height: 0;
+    margin-top: 0;
+  }
+}

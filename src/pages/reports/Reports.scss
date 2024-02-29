@@ -1,0 +1,181 @@
+.reports {
+
+  &-header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-banner {
+    display: flex;
+    align-items: center;
+    height: 198px;
+    background-image: url(./../../assets/img//cabecera.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+
+    h1 {
+      color: white;
+      margin: 0;
+      padding: 66px 0px 66px 133px;
+      font-family: Roboto;
+      font-weight: 700;
+      font-size: 3.5rem;
+    }
+  }
+
+  &-underbanner {
+    display: flex;
+    flex-direction: column;
+    padding: 72px 123px;
+
+    span {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 30px;
+    }
+
+  }
+
+  &-actual {
+    display: flex;
+    height: 588px;
+    flex-direction: column;
+    background-color: #F4f4F4;
+    justify-content: center;
+
+    h1 {
+      margin-left: 120px;
+      font-size: 1.7rem;
+    }
+
+
+
+
+  }
+
+  &-header-middle {
+    display: flex;
+    align-items: center;
+    margin-left: 120px;
+    height: 277px;
+    width: 80%;
+    margin-left: 120px;
+
+    div {
+      width: 80%;
+    }
+
+  }
+
+
+  &-all-reports {
+    background-color: #F4f4F4;
+    padding-left: 120px;
+    padding-bottom: 120px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 35px 0px;
+    /* Reducir el espacio vertical entre las filas */
+
+
+    h1 {
+      flex-basis: 100%;
+      font-size: 1.7rem;
+      grid-column: 1 / -1;
+
+    }
+
+
+  }
+
+  &-all-reports>div {}
+
+
+  &-downloads-reports {
+
+    height: 800px;
+    width: 100%;
+    background-image: url(./../../assets/img//inferior.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-grid {
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 33px;
+
+      &-card {
+        border-radius: 8px;
+        width: 582px;
+        height: 323px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 31px;
+
+        &-left {
+
+          width: 172px;
+          height: 70%;
+          background-image: url(./../../assets/img/doc-jan-aug-en.jpeg);
+          background-repeat: no-repeat;
+          background-size: cover;
+
+        }
+
+
+        &-right {
+          display: flex;
+
+          width: 304px;
+          height: 70%;
+
+          h1 {
+            margin: 0px;
+          }
+
+          &-foot {
+
+            p {
+              font-size: 1rem;
+              font-family: Roboto;
+
+            }
+
+            .butons {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+
+           a{
+            text-decoration: none;
+            color: black;
+
+                border-radius: 4px;
+                border: 1px solid black;
+                padding: 11px 27px;
+                font-size: 14px;
+
+              }
+
+            }
+          }
+
+        }
+      }
+    }
+
+
+
+
+  }
+}

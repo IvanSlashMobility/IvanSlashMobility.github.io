@@ -1,0 +1,19 @@
+.expandable {
+  width: 100%;
+
+  &-button {
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  &-content {
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+
+    &-inner {
+      padding: 10px;
+    }
+  }
+}

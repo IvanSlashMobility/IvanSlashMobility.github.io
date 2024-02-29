@@ -1,0 +1,180 @@
+.card-featured {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.1);
+    margin-right: 36px;
+
+
+    &.featured {
+        min-height: 348px;
+        min-width: 273px;
+        max-width: 273px;
+    }
+
+    &.startup {
+        min-height: 295px;
+        min-width: 273px;
+        max-width: 273px;
+    }
+
+    &.reports {
+        min-height: 295px;
+        min-width: 273px;
+        max-width: 273px;
+    }
+
+
+    .card-featured-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+
+        .card-featured-info {
+            flex-direction: column;
+            padding: 30px;
+            height: 100%;
+
+            .card-featured-head {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+
+                span:nth-child(1) {
+                    font-family: Roboto;
+                    margin-bottom: 8;
+                    font-size: 0.75rem;
+                    color: #55B03B;
+                    margin-bottom: 8px;
+                }
+
+                span:nth-child(2) {
+                    font-family: Roboto;
+                    margin-bottom: 8px;
+                }
+
+                span:nth-child(3) {
+
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    color: gray
+                }
+
+                .card-voice-quote-head {
+                    width: 93px;
+                    height: 32px;
+                    margin-bottom: 1rem;
+
+                    .card-voice-quote {
+                        display: flex;
+                        align-items: center;
+
+                        img:nth-child(1) {
+                            margin-right: 5px;
+                        }
+                    }
+
+                    &.startup {
+                        img {
+                            width: 32px;
+                            height: 32px;
+                            margin-bottom: 16px;
+                        }
+                    }
+                }
+
+
+
+            }
+
+            .card-featured-middle {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                overflow-wrap: break-word;
+
+                span {
+                    font-family: Roboto;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+
+            }
+
+        }
+
+        .card-featured-foot {
+            min-height: 53px;
+            justify-self: end;
+            cursor: pointer;
+
+            &.featured {
+                background-color: #E6FF00;
+            }
+
+            &.startup {
+                background-color: #93D600;
+                ;
+            }
+
+            &.reports {
+                background-color: #55B03B;
+            }
+
+            span {
+                font-family: Roboto;
+                font-size: 0.9rem;
+            }
+
+            .card-featured-foot-content {
+                display: flex;
+                padding: 18px 30px;
+                justify-content: space-between;
+            }
+        }
+
+
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .card-featured {
+
+        &.featured {
+            min-height: 276px;
+            min-width: 273px;
+            max-width: 273px;
+        }
+
+        .card-featured-foot {
+            &.featured {
+                background-color: #93D600;
+            }
+
+            &.startup {
+                background-color: #93D600;
+                ;
+            }
+
+            .card-featured-foot-content {
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

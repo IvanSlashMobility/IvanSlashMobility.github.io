@@ -1,0 +1,155 @@
+{
+  "translation": {
+    "BUTTONS": {
+      "RECOVER": "Recuperar",
+      "SEND": "Enviar",
+      "BACK": "Volver",
+      "DOWNLOAD_MAP": "Descargar mapa",
+      "SEE_MORE": "Ver mas"
+    },
+    "FORM_FIELDS": {
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "Introducir Email",
+      "PWD": "Contraseña",
+      "PWD_PLACEHOLDER": "Introducir Contraseña",
+      "NAME": "Nombre",
+      "NAME_PLACEHOLDER": "Introducir Nombre",
+      "SURNAME": "Apellido",
+      "SURNAME_PLACEHOLDER": "Introducir Apellido"
+    },
+    "FORM_ERRORS": {
+      "INVALID_EMAIL": "El email introducido no es válido",
+      "INVALID_PWD": "La contraseña debe tener una longitud mínima de {{minLength}} caracteres y contener mayúsculas i minúsculas",
+      "INVALID_NAME": "El nombre no tiene un formato válido",
+      "INVALID_SURNAME": "El apellido no tiene un formato válido"
+    },
+    "LOGIN": {
+      "FORGOT_PWD": "¿Has olvidado la contraseña?",
+      "LOGIN": "Iniciar sesión",
+      "LOGOUT": "Cerrar sesión"
+    },
+    "REGISTER": {
+      "REGISTER": "Registrarse"
+    },
+    "RESET_PWD": {
+      "RESET_PWD": "Recuperar contraseña",
+      "NEW_PWD": "Nueva contraseña",
+      "EMAIL_NOT_FOUND": "El email no pertenece a ninguna cuenta"
+    },
+    "ERROR": {
+      "ERROR": "Error",
+      "AUTH": "El email o la contraseña no son correctos",
+      "LOADING_USER": "Se ha producido un error al cargar los datos del usuario",
+      "SESSION_EXPIRED": "La sesión ha caducado, por favor vuelve a iniciar sesión",
+      "REGISTER": "Se ha producido un error durante el registro, por favor vuelve a intentarlo más tarde",
+      "USER_ALREADY_EXISTS": "Este email ya está asociado a otra cuenta",
+      "SEND_CODE": "Se ha producido un error al intentar enviar el código, por favor vuelve a intentarlo más tarde",
+      "RESET_PWD": "Se ha producido un error al intentar restablecer la contraseña, por favor vuelve a intentarlo más tarde",
+      "UNEXPECTED_ERROR": "Ha ocurrido un error inesperado"
+    },
+    "DATETIME": {
+      "TODAY": "Hoy",
+      "YESTERDAY": "Ayer",
+      "TOMORROW": "Mañana",
+      "CHOOSE_DATE_RANGE": "Selecciona un rango de fechas"
+    },
+    "TABS": {
+      "HOME": "Mapa",
+      "STARTUPS": "Startups",
+      "OUTSTANDING": "Destacamos",
+      "MORE": "Conoce CNTA",
+      "REPORTS": "Informes"
+    },
+    "CHART": {
+      "DATE_RANGE": "Período de tiempo",
+      "VOICE_SHARE": "Cuota de voz",
+      "INNOVATION_FOODTECH": "Momento innovación Food Tech",
+      "START": "Arranque",
+      "EXPECTATION": "Expectación",
+      "CHALLENGES": "Desafíos",
+      "INTRODUCTION": "Introducción",
+      "GROWTH": "Crecimiento",
+      "MASS_MARKET": "Mass Market",
+      "TECH_DEVELOPMENT": "Desarrollo tecnológico - Soluciones",
+      "COMERCIAL_AVAILABILITY": "Disponibilidad comercial - Adopción Mercado",
+      "MACROSCENARIOS": "Macroescenarios",
+      "SCENARIOS": "Escenarios",
+      "MOMENTS": "Momentos de innovación",
+      "QUOTA": "Cuotas de voz",
+      "ALL_MACROS": "Todos los Macroescenarios",
+      "ALL_ESCENARIOS": "Todos los Escenarios",
+      "DISABLED_SCENARIO_SELECTOR": "Selecciona un macroescenario para filtrar por escenario",
+      "NO_RESULTS": "No hay resultados para los filtros seleccionados",
+      "RANKING_POSITION": "Posición en el ranking",
+      "PHASE": "Fase",
+      "NEWS": "A continuación mostramos algunas de las noticias más relevantes"
+    },
+    "FILTERS": {
+      "ERASE": "Borrar filtros",
+      "FILTER": "Aplicar filtros"
+    },
+    "HOME": {
+      "NEW_2023_ANUAL_REPORT": "Nuevo informe anual 2023 ya disponible",
+      "INTRO_TITLE": "Mapa de escenarios de Oportunidad",
+      "INTRO_SUBTITLE": "Explora el futuro de la alimentación en tiempo real",
+      "INTRO_TEXT": "Este observatorio ofrece las tendencias más actuales y las oportunidades futuras para la industria alimentaria. Actualizado periódicamente por el equipo de Vanguardia de CNTA, el mapa se genera en tiempo real gracias a la vigilancia y curación de información de más de 100 fuentes nacionales e internacionales.",
+      "FILTER_TITLE": "Filtra",
+      "FILTER_TEXT": "por tus intereses",
+      "ENTER_TITLE": "Entra",
+      "ENTER_TEXT": "en los escenarios",
+      "COMPARE_TITLE": "Compara",
+      "COMPARE_TEXT": "con un periodo anterior",
+      "ANALYSIS_TITLE": "Sumérgete en un análisis más profundo",
+      "ANALYSIS_TEXT": "Conoce las claves, lanzamientos, startups y desafíos que los expertos de CNTA han detectado sobre el último periodo analizado por el equipo de Vanguardia.",
+      "SEE_ANALYSIS": "Ver análisis",
+      "ALERTS_TITLE": "Estar al día es muy fácil",
+      "ALERTS_TEXT": "Recibe alertas para saber lo que está pasando en el momento",
+      "GET_ALERTS": "Recibir alertas",
+      "REPORTS_TITLE": "Ten una visión completa con los informes anuales",
+      "REPORTS_TEXT": "Entiende como ha estado funcionando el sector FoodTech y toma mejores decisiones",
+      "GO_TO_REPORTS": "Ir a los informes",
+      "FINANCED_BY": "Financiado por",
+      "CONTACT": "Contacta con nosotros",
+      "CONTACT_FORM": "O con nuestro formulario",
+      "FORM": "Formulario de contacto",
+      "PRIVACY": "Política de privacidad",
+      "LEGAL": "Aviso legal",
+      "COOKIES": "Política de cookies",
+      "CHART_DOWNLOAD": "¿Quieres compartir este mapa en formato original?",
+      "TOTAL_ANALYZED_INFO": "Total de informaciones analizadas",
+      "MACROS": "Macroescenarios",
+      "SEE_TIME_PERIOD": "Ver periodo de tiempo",
+      "SEE_MORE": "Ver mas",
+      "FEATURED_TITLE": "Destacamos",
+      "STARTUPS_TITLE": "Startups"
+    },
+    "ABOUT": {
+      "TEXT_1": "El Foodtech está guiando el camino hacia la alimentación del futuro.",
+      "TEXT_2": "¿Cuáles son los escenarios de oportunidad? ¿De qué se habla más? ¿Son sólo expectativas o ya están cerca de ser realidad?",
+      "TEXT_3": "Para dar luz a estas cuestiones, te presentamos una <strong>nueva edición</strong> del Mapa de Escenarios de Oportunidad, financiado por el Ministerio de Agricultura, Pesca y Alimentación (<strong>MAPA</strong>) y elaborado por <strong>CNTA</strong>.",
+      "TEXT_4": "El <strong>Mapa de Escenarios de Oportunidad</strong> es un <strong>observatorio</strong> que <strong>cada cuatro meses</strong> nos presenta un mapa de las <strong>tendencias más actuales</strong> y las <strong>oportunidades de futuro</strong> para la industria alimentaria. Este estudio se puede consultar de forma gratuita en la página de CNTA, y se realiza desde el equipo de Vanguardia de CNTA, el cual lo elabora en base a la vigilancia y curación de informaciones de <strong>más de 100 fuentes</strong> nacionales e internacionales.",
+      "BEST_SCENARIO_FOR_YOU": "¿Cuál es el mejor escenario para ti?",
+      "EXPLORE": "Explora de forma rápida y visual los escenarios de oportunidad Food Tech"
+    },
+    "MAP_INSTRUCTIONS": {
+      "TITLE": "¿Cómo interpretar este mapa?",
+      "DESCR": "El Mapa de Escenarios de Oportunidad es una gráfica intuitiva y visual que te ayudará a identificar de una forma sencilla y rápida la posición de cada escenario en base a tres variables:",
+      "VOICE_SHARE": "Porcentaje de informaciones referenciando a determinado escenario, respecto al total de informaciones analizadas",
+      "BUBBLE_SIZE": "Tamaño de la burbuja",
+      "BUBBLE_SIZE_DESCR": "Número de informaciones publicadas para cada escenario en el periodo de tiempo analizado. Representa cuánto se habla de cada escenario en cada momento",
+      "INNOVATION_MOMENT": "Momento de innovación",
+      "INNOVATION_MOMENT_DESCR": "Valoración de la fase de desarrollo de cada escenario en su aproximación al mercado. Mide según lo que se dice en cada información si se encuentra en momento de arranque, expectación, desafíos, introducción, crecimiento o mass market",
+      "START": "En esta fase, las informaciones publicadas por los medios de comunicación hablan fundamentalmente de investigaciones y descubrimientos realizados.",
+      "EXPECTATION": "En la etapa de expectación, también conocida como Hype, las informaciones publicadas se refieren, fundamentalmente, al potencial de los desarrollos a realizar, se descubren algunos prototipos y pruebas de concepto y, sobre todo, se mencionan las expectativas sobre el impacto que tendrán en el futuro.",
+      "CHALLENGES": "En esta fase comienza a haber un poco de impaciencia porque las expectativas creadas en la fase anterior no acaban de cristalizarse. Se explican los desafíos pendientes, las barreras a superar para llegar a mercado y los planes a acometer para superarlas.",
+      "INTRODUCTION": "En este momento ya hablamos de que la tecnología, las innovaciones y las soluciones llegan a mercado. Se empieza a comercializar, vemos lanzamientos y pruebas de mercado, se comienza a tener datos de adopción a través de las primeras compras realizadas por innovadores, etc.",
+      "GROWTH": "Esta etapa es la más esperada. Existe oferta en el mercado y adopción por parte de clientes y consumidores, en su mayoría early adopters. La oferta es más abundante e incluso las grandes marcas realizan lanzamientos. Cada vez es más conocido y no es extraño encontrar noticias al respecto en medios no especializados del sector.",
+      "MASS_MARKET": "En nuestra escala, esta fase se inicia cuando ya la mayoría temprana de consumidores conoce la solución y puede acceder a ella. Ya el producto comienza a entrar en una fase madura."
+    },
+    "REPORTS": {
+      "DESCR": "En este apartado puedes descargar los informes anuales del Mapa de escenarios de oportunidad foodtech, elaborados por el equipo de Vanguardia de CNTA tras un proceso de observación y curado de información realizado diariamente durante todo el año.",
+      "JAN_AUG_2023": "Informe enero/agosto 2023",
+      "ANUAL_2022": "Informe anual 2022"
+    }
+  }
+}

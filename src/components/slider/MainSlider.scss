@@ -1,0 +1,59 @@
+.slider {
+  flex: 1;
+
+  &-wrapper {
+    height: 40px;
+    position: relative;
+  }
+
+  &-container, &-numbers {
+    width: 100%;
+  }
+
+  &-wrapper {
+    width: 99%;
+  }
+
+  &-label {
+    width: 99.4%;
+    margin-bottom: 8px;
+
+    &-value {
+      font-weight: 600;
+    }
+  }
+
+  .rc-slider-handle-dragging {
+    box-shadow: none !important; 
+  }
+
+  &-separators {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 1px;
+
+    &-separator {
+      width: 1px;
+      height: 14px;
+      background-color: var(--medium-dark-gray);
+    }
+  }
+
+  &-numbers {
+    color: var(--medium-dark-gray);
+    margin-top: -20px;
+
+    &-min, &-max, &-mid {
+      width: 40px;
+    }
+
+    &-mid {
+      text-align: center;
+    }
+
+    &-max {
+      text-align: right;
+    }
+  }
+}

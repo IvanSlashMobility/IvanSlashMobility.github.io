@@ -1,0 +1,48 @@
+.main-select {
+
+  width: 100%;
+  min-width: 100px;
+
+  &-option {
+
+    width: 300px;
+    border-top: 1px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  &-checkbox {
+    min-width: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    border: 2px solid var(--medium-dark-gray);
+    border-radius: 2px;
+    // transition: ease 0.3s all;
+
+    &-active {
+      border: 2px solid var(--primary);
+      background-color: var(--primary);
+    }
+
+    &-children {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 10px 0 10px 10px;
+      padding-left: 20px;
+      flex-direction: column;
+
+      &-options {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+  }
+
+
+}

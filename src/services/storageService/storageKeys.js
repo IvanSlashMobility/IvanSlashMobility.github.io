@@ -1,0 +1,1 @@
+export const USER_DATA = 'slashtemplate_user_data';

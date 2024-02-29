@@ -1,0 +1,278 @@
+.bubbleChart {
+  &-container {
+    width: 100%;
+    aspect-ratio: 9/5;
+  }
+
+  &-header {
+    margin-left: 5px;
+    margin-bottom: 12px;
+    height: 20px;
+    position: relative;
+
+    &-black {
+      flex: 5;
+      height: 100%;
+      border-bottom: 12px solid var(--soft-black);
+      position: relative;
+      padding-right: 10px;
+
+      &-label {
+        font-size: 9px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 5px;
+        background-color: var(--soft-black);
+        margin-left: 2%;
+        color: var(--white);
+      }
+    }
+    
+    &-chevron {
+      position: absolute;
+      right: -6px;
+      top: 15px;
+    }
+
+    &-gray {
+      flex: 4;
+      height: 100%;
+      border-bottom: 12px solid var(--light-gray);
+
+      &-label {
+        font-size: 9px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 5px;
+        background-color: var(--light-gray);
+        margin-right: 2%;
+        text-align: right;
+      }
+    }
+  }
+
+  &-data {
+    position: relative;
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-legend {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 300;
+      width: min(12vw, 20vh);
+    }
+
+    &-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      &-left {
+        flex: 5;
+        opacity: 0.5;
+        height: 100%;
+        background-image: url('../../assets/img/silver.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &-right {
+        flex: 4;
+        height: 100%;
+        background-image: url('../../assets/img/white_texture.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &-yAxis {
+    width: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 5px;
+    font-size: 9px;
+
+    &-label {
+      position: relative;
+      height: 100%;
+      width: 30px;
+      margin-right: -5px;
+      padding-right: 5px;
+      font-size: 7px;
+      text-align: right;
+      font-weight: bold;
+      border-right: 1px solid var(--black);
+    }
+
+    &-dot {
+      position: absolute;
+      top: 0;
+      right: -3px;
+      width: 5px;
+      height: 5px;
+      background-color: var(--black);
+      border-radius: 50%;
+    }
+  }
+
+  &-yAxisRight {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 7px;
+    margin-left: 5px;
+    font-weight: bold;
+
+    &-dot {
+      position: absolute;
+      bottom: -3px;
+      left: -7px;
+      width: 5px;
+      height: 5px;
+      background-color: var(--black);
+      border-radius: 50%;
+    }
+  }
+
+  &-xAxis {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 7px;
+    background: linear-gradient(90deg, rgba(230,255,3,1) 0%, rgba(230,255,3,1) 16%, rgba(153,255,50,1) 17%, rgba(153,255,50,1) 32%, rgba(82,176,59,1) 33%, rgba(82,176,59,1) 55%, rgba(13,129,53,1) 56%, rgba(13,129,53,1) 74%, rgba(169,169,169,1) 75%, rgba(169,169,169,1) 86%, rgba(42,42,42,1) 87%);
+
+    &-content {
+      position: relative;
+      flex: 1;
+      height: 30px;
+      margin-top: -3px;
+      background-image: url('../../assets/img/chevron.png');
+    }
+
+    &-label {
+      display: none;
+      
+      &-text {
+        display: none;
+      }
+    }
+  }
+
+  &-horizontalLine {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px dashed var(--white);
+    z-index: 0;
+  }
+
+  &-verticalLine {
+    flex: 1;
+    height: 100%;
+    border-right: 1px dashed var(--white);
+    z-index: 0;
+  }
+
+  &-item {
+    width: min(200px, 10vw);
+    height: min(200px, 10vw);
+    min-width: 80px;
+    min-height: 80px;
+
+    &-label {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .bubbleChart {
+    &-header {
+      &-black {
+        &-label {
+          font-size: 14px;
+        }
+      }
+  
+      &-gray {
+        &-label {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &-yAxis {
+      width: 50px;
+      font-size: 11px;
+
+      &-label {
+        width: 50px;
+        font-size: 9px;
+      }
+    }
+
+    &-xAxis {
+      height: 15px;
+
+      &-label {
+        height: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        background-color: var(--white);
+        white-space: nowrap;
+        padding: 0 4px;
+        margin-top: 2px;
+        
+        &-text {
+          display: block;
+          font-weight: 600;
+          font-size: 10px;
+        }
+      }
+    }
+
+    &-yAxisRight {
+      width: 50px;
+      font-size: 9px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .bubbleChart {
+    &-item {
+      &-label {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        margin-bottom: -100%;
+  
+        &-content {
+          flex: 0;
+          width: auto;
+          background-color: var(--white);
+          border-radius: 8px;
+          -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+          -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+          box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

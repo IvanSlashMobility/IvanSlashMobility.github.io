@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans'), url(./assets/fonts/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 100;
+  src: local('OpenSans'), url(./assets/fonts/OpenSans-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 600;
+  src: local('OpenSans'), url(./assets/fonts/OpenSans-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-weight: 900;
+  src: local('OpenSans'), url(./assets/fonts/OpenSans-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(./assets/fonts/Roboto/Roboto-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: local('Roboto'), url(./assets/fonts/Roboto/Roboto-Light.ttf) format('truetype');
+}
+
+/* ADD HERE ANY CUSTOM FONTS */
+
+:root {
+  --primary-font: "OpenSans";
+
+  /* ADD HERE CUSTOM COLORS */
+
+  --black: black;
+  --soft-black: #1E1E1E;
+  --black-opacity: rgb(0, 0, 0, 0.7);
+  --black-shadow: rgb(0, 0, 0, 0.1);
+  --soft-black: #343434;
+  --white: white;
+  --white-opacity: rgb(255, 255, 255, 0.8);
+  --white-opacity-2: rgb(170, 170, 170, 0.15);
+
+  --primary: #94D600;
+  --primary-light: rgba(230, 255, 3, 1);
+  --primary-opacity: #E5F3E1;
+  --secondary: #D3A651;
+  --tertiary: #83BA00;
+
+  --text-primary: #1A1A1A;
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-tertiary: #A0A1A4;
+
+  --error: #C0382F;
+  --success: #2FC061;
+
+  --super-light-gray: #F5F5F5;
+  --light-gray: #ECECEC;
+  --medium-light-gray: #D8DADC;
+  --medium-gray: #A9A9A9;
+  --medium-dark-gray: #999999;
+  --dark-gray: #5A5A5A;
+
+
+  --disabled-button: rgb(0, 0, 0, 0.25);
+
+  --background: #EEEEEE;
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  color: var(--text-primary);
+}
